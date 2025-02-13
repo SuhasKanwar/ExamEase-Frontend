@@ -1,8 +1,13 @@
+import {BrowserRouter, Route, Routes,Router,} from "react-router-dom";
+
 function App() {
   return (
-    <div className="flex justify-center items-center h-screen">
-      <h1>ExamEase</h1>
-    </div>
+    <BrowserRouter>
+      <Router>
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+      </Router>
+    </BrowserRouter>
   );
 }
 
