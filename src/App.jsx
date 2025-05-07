@@ -5,6 +5,8 @@ import Home from "./pages/Home";
 import About from "./components/About";
 import Featured from "./components/Featured";
 import Dashboard from "./pages/Dashboard";
+import McqPage from "./pages/McqPage";
+import ResultPage from "./pages/ResultPage";
 
 function App() {
   return (
@@ -16,6 +18,9 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/mcq" element={<McqPage/>} />
+        <Route path="/result" element={<ResultPage/>} />
+
       </Routes>
     </BrowserRouter>
   );

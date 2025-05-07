@@ -1,29 +1,30 @@
 import React from 'react';
 import { Bell, BookOpen, Calendar, Clock, Users, Layout, FileText, Settings, HelpCircle } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const ProctorDashboard = () => {
   const upcomingExams = [
     {
       id: 1,
-      subject: 'Applied Mechanics',
+      subject: 'Software Engineering Exam',
       type: 'Online Exam',
       subtitle: 'ME- 1st Term, Mid Term Exam | MCQ',
-      date: '20-09-2020',
-      duration: '3 Hours',
-      marks: '200',
+      date: '08-05-2025',
+      duration: '1 Hours',
+      marks: '100',
       time: '10:00 AM',
       checkInTime: '10:00 AM',
       status: 'upcoming'
     },
     {
       id: 2,
-      subject: 'Applied Mechanics',
+      subject: 'Applied Mathematics',
       type: 'Online Exam',
-      subtitle: 'ME- 1st Term, Mid Term Exam | MCQ',
-      date: '20-09-2020',
-      duration: '3 Hours',
-      marks: '200',
-      time: '10:00 AM',
+      subtitle: 'ME- 2nd Term, End Term Exam | MCQ',
+      date: '20-09-2025',
+      duration: '2 Hours',
+      marks: '50',
+      time: '5:00 PM',
       checkInTime: '10:00 AM',
       status: 'upcoming'
     }
@@ -71,6 +72,7 @@ const ProctorDashboard = () => {
   );
 
   const ExamCard = ({ exam }) => (
+    <Link to={'/mcq'}>
     <div className="bg-white p-6 rounded-lg  mb-4 shadow ">
       <div className="flex justify-between items-start mb-4">
         <div>
@@ -137,6 +139,7 @@ const ProctorDashboard = () => {
         </div>
       )}
     </div>
+    </Link>
   );
 
   return (

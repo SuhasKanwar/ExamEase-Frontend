@@ -5,9 +5,6 @@ import toast from "react-hot-toast";
 
 const Login = () => {
 
-<<<<<<< HEAD
-export default Login
-=======
   const [user, setUser] = useState({
     email: "",
     password: "",
@@ -105,4 +102,3 @@ export default Login
 };
 
 export default Login;
->>>>>>> 1f661bf204c38553b2a4f87701156ae16dbc05c8
